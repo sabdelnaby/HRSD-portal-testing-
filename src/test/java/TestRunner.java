@@ -44,7 +44,7 @@ public class TestRunner {
 
     @Test
 
-    public void navigateLanding() throws InterruptedException {
+    public void RegisterOrganization() throws InterruptedException {
         landingPage.navigateToLandingPage();
         landingPage.changeLanguageToEnglish();
         landingPage.clickOnLoginButton();
