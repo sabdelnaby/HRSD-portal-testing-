@@ -14,8 +14,6 @@ import java.time.Duration;
 
 import java.util.Random;
 
-import static pages.BasePage.getRandomString;
-
 
 public class TestRunner {
 
@@ -53,24 +51,25 @@ public class TestRunner {
 
         optionPage.addNewOrganization();
 
-        registerationPage.fillOrganizationRegistrationForm(testData.OrganizationNameArabic,
-                testData.OrganizationNameEnglish,
-                testData.UnifiedNationalID,
-                testData.OrganizationSector,
-                testData.OrganizationLogo,
+        // Fill the form and submit
+        registerationPage.fillOrganizationRegistrationForm(
+                testData.organizationNameArabic,
+                testData.organizationNameEnglish,
+                testData.unifiedNationalID,
+                testData.organizationSector,
+                testData.organizationLogo,
                 testData.organizationPhone,
-                testData.ApplicantName,
-                testData.ApplicantNationalID,
-                testData.ApplicantJobTitle,
-                testData.ApplicantPhoneNumber,
-                testData.FoundationDate,
-                testData.Domain,
-                testData.EmailDomain);
+                testData.applicantName,
+                testData.applicantNationalID,
+                testData.applicantJobTitle,
+                testData.applicantPhoneNumber,
+                testData.foundationDate,
+                testData.domain,
+                testData.emailDomain
+        );
 
-        registerationPage.clickRegisterButton();
-
-        registerationPage.enterSMSCode(testData.SMSCode);
-
+        // Enter SMS code after submission
+        registerationPage.enterSMSCode(testData.smsCode);
         Assert.assertTrue(registerationPage.GetSuccessMessage());
 
 
@@ -79,7 +78,7 @@ public class TestRunner {
     @AfterClass
     public void tearDown() {
         if (driver != null) {
-//            driver.quit();
+            driver.quit();
         }
     }
 

@@ -24,18 +24,18 @@ public class TestData {
     Long ApplicantNatID = ApplicantNationalID_Base + randomPart_NationalID;
 
     // Test Data
-    public String OrganizationNameArabic = "فالكون لخدمات الأمن و الحراسة";
-    public String OrganizationNameEnglish = "Falcon Security Services";
-    public String UnifiedNationalID = UNI.toString();
-    public String OrganizationSector = "خاص";
-    public String OrganizationLogo = "C:\\Users\\sabdelnaby\\IdeaProjects\\HRSDPortalTesting\\src\\test\\java\\FalconSecurityServices.png";
+    public String organizationNameArabic = "فالكون لخدمات الأمن و الحراسة";
+    public String organizationNameEnglish = "Falcon Security Services";
+    public String unifiedNationalID = UNI.toString();
+    public String organizationSector = "خاص";
+    public String organizationLogo = "C:\\Users\\sabdelnaby\\IdeaProjects\\HRSDPortalTesting\\src\\test\\java\\FalconSecurityServices.png";
     public String organizationPhone = telNum.toString();
-    public String ApplicantName = "محمد";
-    public String ApplicantNationalID = ApplicantNatID.toString();
-    public String ApplicantPhoneNumber = telNum.toString();
-    public String ApplicantJobTitle = "محامي";
-    public String FoundationDate = "02042000";
-    public String Domain = "@" + getRandomString(5) + ".com";
-    public String EmailDomain = "admin" + Domain;
-    public String SMSCode = "5555";
+    public String applicantName = "صلاح";
+    public String applicantNationalID = ApplicantNatID.toString();
+    public String applicantPhoneNumber = telNum.toString();
+    public String applicantJobTitle = "مهندس";
+    public String foundationDate = "02042000";
+    public String domain = "@" + getRandomString(5).toLowerCase() + ".com";
+    public String emailDomain = "admin" + domain;
+    public String smsCode = "5555";
 }
