@@ -24,7 +24,7 @@ public class TestRunner {
     LandingPage landingPage;
     OptionPage optionPage;
     RegisterationPage registerationPage;
-    TestData testData = new TestData();
+    TestData testData;
 
 
     @BeforeClass
@@ -39,13 +39,14 @@ public class TestRunner {
         landingPage = new LandingPage(driver);
         optionPage = new OptionPage(driver);
         registerationPage = new RegisterationPage(driver);
+        testData = new TestData();
     }
 
 
     @Test
 
     public void RegisterOrganization() throws InterruptedException {
-        landingPage.navigateToLandingPage();
+        landingPage.navigateToLandingPage(testData.baseURL);
         landingPage.changeLanguageToEnglish();
         landingPage.clickOnLoginButton();
 

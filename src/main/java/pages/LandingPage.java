@@ -19,8 +19,7 @@ public class LandingPage extends BasePage {
     By loginBtn = By.id("loginBtn");
 
 
-    public void navigateToLandingPage() {
-        String baseURL = "https://stg-dev.hrsdportal.hrsd.gov.sa/";
+    public void navigateToLandingPage(String baseURL) {
         driver.get(baseURL);
 
 

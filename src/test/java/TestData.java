@@ -24,6 +24,7 @@ public class TestData {
     Long ApplicantNatID = ApplicantNationalID_Base + randomPart_NationalID;
 
     // Test Data
+    public String baseURL = "https://stg-dev.hrsdportal.hrsd.gov.sa/";
     public String organizationNameArabic = "فالكون لخدمات الأمن و الحراسة";
     public String organizationNameEnglish = "Falcon Security Services";
     public String unifiedNationalID = UNI.toString();
